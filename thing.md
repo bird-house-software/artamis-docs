@@ -1,4 +1,4 @@
 # thing
 hey
 
-[back](./)
+[Index](/)
