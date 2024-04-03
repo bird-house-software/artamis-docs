@@ -1,1 +1,3 @@
 # Artamis Kernel
+
+[Index](/)

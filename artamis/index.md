@@ -1,1 +1,3 @@
 # Artamis PL
+
+[Index](/)
