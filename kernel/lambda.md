@@ -1,25 +1,5 @@
-# Parser
+# Lambda
 
-```
-Note: This is in alpha and is likely to change!
-```
-
-[Index](/)
-
-Use the Lexer to read Tokens and return an Abstract Syntax Tree. 
-
-## Something
-
-```
-num := /[0-9]+/
-op := + -
-
-sum ::= num op:+ sum { ADD $1 $3 }
-      | num op:- sum { SUB $1 $3 }
-      | num
-
-num ::= num: { INTEGER }
-```
 
 ## Parser Kernel
 
@@ -44,7 +24,14 @@ factor ::= op:( arith! op:)! { $2 EVAL } !! ^2 Expected Arith Expression!
                                          !! ^3 Expected Closing Bracket /~)~/
          | value
 
-value ::= float: { FLOAT } 
+value ::= float: { FLOAT }
         | int:   { INTEGER }
 
+// Lambda
+ADD $a $b => { a + b }
+SUB $a $b => { a - b }
+MUL => { $1 * $2 }
+DIV => { $1 / $2 }
+FLOAT =>   { $$.eval_as<f32> }
+INTEGER => { $$.eval_as<i32> }
 ```
