@@ -13,3 +13,4 @@ The web-docs for the ARTAMIS programming language.
     - [Getting Started](/artamis/getting-started)
     - [ARTAMIS Basics](/artamis/basics)
     - [Subsitiution](#)
+- [Examples](/examples)

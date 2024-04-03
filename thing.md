@@ -1,4 +1,0 @@
-# thing
-hey
-
-[Index](/)
