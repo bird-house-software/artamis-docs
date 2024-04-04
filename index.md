@@ -8,6 +8,7 @@ The web-docs for the ARTAMIS programming language.
     - [Token](/kernel/token)
     - [Lexer](/kernel/lexer)
     - [Parser](/kernel/parser)
+    - [Lambda](/kernel/lambda)
 - [ARTAMIS Kernel](/artamis-kernel)
 - [ARTAMIS](/artamis)
     - [Getting Started](/artamis/getting-started)
